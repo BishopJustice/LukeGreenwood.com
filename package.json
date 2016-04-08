@@ -1,9 +1,9 @@
 {
-  "name": "Druthers",
+  "name": "LukeGreenwoodDotCom",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quavmo/druthers.git"
+    "url": "https://github.com/BishopJustice/luke.git"
   },
   "license": "UNLICENSED",
   "private": "true",

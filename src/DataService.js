@@ -1,5 +1,5 @@
 import Firebase from 'firebase';
 
-let firebase = new Firebase('druthers-base.firebaseio.com');
+let firebase = new Firebase('greenwood.firebaseio.com');
 
 export default firebase;
