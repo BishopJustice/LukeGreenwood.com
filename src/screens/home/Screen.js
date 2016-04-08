@@ -16,8 +16,4 @@ export default class Home extends React.Component {
 
     return React.DOM.div({className: 'center'}, header, ...subheaders, bookingControl);
   }
-
-  // componentDidMount() {
-	// 	DataService.on('value', this.setStateIfData, this);
-	// }
 };

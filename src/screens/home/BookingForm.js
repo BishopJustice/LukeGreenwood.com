@@ -1,12 +1,16 @@
 import React from 'react';
 
 export default class BookingForm extends React.Component {
-
+  constructor(){
+    super(...arguments);
+    this.state = {};
+  }
   render() {
     var fields = ["Name", "Location", "Time", "Fee"].map(this.hydrateField.bind(this));
     var submit = React.DOM.button({}, "Yeah Dawg")
     var form = React.DOM.form({onSubmit: this.formSubmitted.bind(this)}, ...fields, submit);
-    return form;
+    var thanks = React.DOM.h2({}, "Grazie!");
+    return this.state.booked ? thanks : form;
   }
 
   fieldChanged(event) {
@@ -21,7 +25,7 @@ export default class BookingForm extends React.Component {
 
   	console.log(this.state);
   	this.props.database.push(this.state);
-    this.setState({});
+    this.setState({booked: true});
   }
 
   hydrateField(string) {
