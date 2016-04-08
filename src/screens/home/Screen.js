@@ -1,4 +1,6 @@
 import React from 'react';
+import DataService from '../../DataService';
+import BookingControl from './BookingControl';
 
 export default class Home extends React.Component {
   render() {
@@ -10,6 +12,12 @@ export default class Home extends React.Component {
       React.DOM.h3({}, "Luke Greenwood")
     ];
 
-    return React.DOM.div({className: 'center'}, header, ...subheaders);
+    let bookingControl = React.createElement(BookingControl, {database: DataService.child('bookings')});
+
+    return React.DOM.div({className: 'center'}, header, ...subheaders, bookingControl);
   }
+
+  // componentDidMount() {
+	// 	DataService.on('value', this.setStateIfData, this);
+	// }
 };
