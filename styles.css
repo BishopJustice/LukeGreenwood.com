@@ -4,8 +4,19 @@ body{
     text-align: center;
     font-family: "Quicksand", sans-serif; 
     font-weight: 300; 
+    font-size: 25;
     text-transform: uppercase;
     padding-top: 15%;
     margin: 0 auto;
-    
+    line-height: 120%
+}
+
+.booking{
+    font-size: 20;
+}
+
+.items{
+    margin:0 auto;
+    /*text-align: right;*/
+    max-width: 35%
 }
